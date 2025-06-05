@@ -1,0 +1,338 @@
+body {
+    background-color:white;
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff03b3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: #F0F8FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #03d654;
+    text-decoration: underline;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+  
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div.animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+  div.animation3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation5 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation6 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation7 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+
+  div.animation8 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation9 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.animation10 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+  }
+  
+  @keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  div.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+  
+  div.transition:hover {
+    width: 300px;
+  }
+
+  div.transition2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+  }
+  
+  div.transition2:hover {
+    width: 300px;
+    height: 300px;
+  }
+  div.transition3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+    transition-delay: 1s;
+  }
+  
+  div.transition3:hover {
+    width: 300px;
+  }
+
+  div.transition4 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  div.transition4:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+
+  div.translatemethod {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px,100px);
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ 
+ @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+ }
+ 
+ .webfont {
+    font-family: myFirstFont;
+ }
+
+ .dtransform body {
+    margin: 0;
+  }
+  
+  .dtransform ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .dtransform li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .dtransform li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .dtransform li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
